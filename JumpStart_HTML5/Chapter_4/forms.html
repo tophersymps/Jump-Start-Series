@@ -25,4 +25,31 @@
     <label for="city">City of residence:</label>
     <input type="text" name="city" id="city">
   </p>
+  <p>
+    <label for="email">E-mail address: (separate multiple with a comma)</label>
+    <input type="email" name="email" id="email" required
+    placeholder="jane.doe@example.com" multiple>
+  </p>
+  <p>
+    <label for="telephone">Telephone number:</label>
+    <input type="tel" name="telephone" id="telephone"
+    placeholder="(000) 000-0000"
+    pattern="\([2-9][0-9]{2}\) [0-9]{3}-[0-9]{4}">
+  </p>
+  <p>
+    <label for="url">
+      Please provide a web site where we can learn more (if applicable)</label>
+    <input type="url" name="current_site" id="current_site"
+    placeholder="http://www.example.com/"
+    pattern="http(|s)://[-0-9a-z]{1,253}\.[.a-z]{2,7}">
+  </p>
+  <p>
+    <label for="project">Tell us your story idea:</label>
+    <textarea name="story_idea" id="story_idea"
+      placeholder="Briefly tell us what we should write about and why."
+      maxlength="2000"></textarea>
+  </p>
+  <p>
+    <button type="submit">Send it!</button>
+  </p>
 </form>

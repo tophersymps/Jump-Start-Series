@@ -1,4 +1,4 @@
-/*
+<!--
   Create a form that gathers the following information:
     -Name
     -City of Residence
@@ -8,11 +8,21 @@
     -The actual story idea
   At the very least we want to require first name, email address,
   and story idea.
-*/
+-->
 <form action="/script" method="post" enctype="multipart/form-data">
   <p>
     <label for="your_name">Your name:</label>
     <input type="text" name="your_name" id="your_name" required>
   </p>
-  
+  <!--Could also be written:
+  <p>
+    <label>Your name:
+      <input type="text" name="your_name" required>
+    </label>
+  </p>
+  -->
+  <p>
+    <label for="city">City of residence:</label>
+    <input type="text" name="city" id="city">
+  </p>
 </form>
